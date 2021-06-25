@@ -1,0 +1,342 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 3px solid rgb(253, 250, 250);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+.form{
+    max-width: 62%;
+    margin: 10px auto;
+}
+.textcenter{
+    text-align: center;
+    padding: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 14px 0;
+    padding: 5px 3px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    background-color:lawngreen;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size: 18px;
+    background: none;
+    color:black;
+    cursor: pointer;
+}
+
+.contact{
+    height: 600px;
+    background-color: blanchedalmond;
+    background-size:cover ;
+    background-blend-mode: darken;
+    
+}
+.look img{
+ /* align-items: center;
+ 
+ justify-content: center; */
+ flex-direction: row;
+ /* display: flex; */
+ border: 3px solid black;
+ padding: 10px;
+ height: 300px;
+ width: 300px;
+}
+#next a{
+   
+    text-align: center;
+    margin: 20px;
+    color: black;
+   font-size: 30px;
+   font-family: "audiowide";
+}
+#next a:hover{
+   color: red;
+   cursor: pointer;
+   transition: .5s ease-in-out;
+}
+.map iframe{
+           margin: 30px 80px;
+           width: 800px;
+           height: 300px;
+           position: absolute;
+       }
+nav{
+    height:80px;
+    background: #2c3e50;
+}
+nav img{
+    
+    top:1%;
+     bottom: 5%;
+    width: 110px;
+    position: absolute;
+   
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+.entry{
+    border: 3px solid black;
+   text-align: center;
+   margin: 0px 8px;
+    
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.links{
+    border: 3px solid black;
+}
+.links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.links ul li{
+    list-style: none;
+   padding: 15px;
+}
+.links ul li a{
+    transition: ease-in .3s all;
+    
+}
+.links ul li:nth-child(1) a:hover{
+ color:#cd486b;
+}
+.links ul li:nth-child(2) a:hover{
+    color:#1DA1F2;
+   }
+   .links ul li:nth-child(3) a:hover{
+    color:#2867B2;
+   }
+.links ul li a:hover
+{
+cursor: pointer;
+color: palevioletred;
+transform:translate(0,-10px);
+}
+.links fab fa-instagram fa-3x:hover{
+ color: palevioletred;
+}
+h3{
+    text-align: center;
+    margin: 20px;
+   
+    border-radius: 10px;
+    border: 2px solid black;
+}
+h4{
+    text-align: center;
+    margin: 20px;
+   
+   font-family: "audiowide";
+}
+.face{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.face img{
+    border: 2px solid white;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    animation-name: face;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    
+}
+.face img:hover{
+    transform:scaleX(20px);
+}
+@keyframes face {
+    from{
+        height: 1px;
+        width: 1px;
+    }
+    to{
+        height: 100px;
+        width: 100px;
+    }
+}
+h1{
+    text-align: center;
+    margin: 20px;
+     font-family:"audiowide";
+    border-radius: 10px;
+    border: 2px solid black;
+}
+p{
+font-size:15px;
+   
+    text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.imag{
+ 
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+  
+}
+
+.imag img{
+    
+    height: 800px;
+    width: 800px;
+    margin: 20px;
+    border: 2px solid black;
+  
+}
+.imag img:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width:1118px){
+    nav img{
+        left: 8%;
+    }
+}
+@media(max-width:944px){
+    nav img{
+        left: 6%;
+        top:15px;
+        bottom: 15%;
+        width: 100px;
+        
+    }
+    
+    
+    nav ul li a{
+        font-size: 17px;
+        
+    }
+}
+    @media(max-width:860px){
+       label #btn{
+           display: block;
+       }
+       .map iframe{
+           margin: 20px 30px;
+           width: 290px;
+           height: 200px;
+           position: absolute;
+       }
+       ul{
+           position: fixed;
+           width: 100%;
+           height: 100vh;
+           background: #34495e;
+           top:80px;
+           left:-100%;
+           text-align: center;
+           transition: all .5s;
+       }
+       
+       .entry{
+        border: 3px solid black;
+       text-align: center;
+       margin: 0px 0px;
+      
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+       .look img{
+        /* align-items: center;
+        
+        justify-content: center; */
+        flex-direction: row;
+        /* display: flex; */
+        border: 3px solid black;
+        padding: 10px;
+        margin: 10px 15px;
+        height: 300px;
+        width: 300px;
+       }
+       .imag img{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+       nav ul li{
+           display: block;
+           margin:50px 0;
+           line-height: 30px;
+       }
+        nav ul li a{
+            font-size: 20px;
+            
+        }
+        #check:checked ~ ul{
+            left:0;
+        }
+        #check:checked ~ label #btn{
+            display: none;
+        }
+        #check:checked ~ label #cancel{
+            display: block;
+        }
+    }
